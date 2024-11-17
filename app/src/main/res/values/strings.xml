@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">pdm</string>
+    <string name="send">Enviar</string>
+    <string name="back">Voltar</string>
+    <string name="value">Valor</string>
+    <string name="color">Cor</string>
+</resources>
