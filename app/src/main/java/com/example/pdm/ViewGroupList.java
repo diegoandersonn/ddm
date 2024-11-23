@@ -22,13 +22,13 @@ public class ViewGroupList extends AppCompatActivity {
         // 4-) As propriedades wrap_content e match_parent são usadas para definir a largura e a altura. Wrap Content ocupa apenas o espaço necessário na view e Match Parent
         // ocupa tod o espaço do container pai.
         // 5-) A propriedade Gravity é utilizada para definir o posicionamento geral das views no Linear Layout.
-        // 6-)
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_view_group_list);
         Button backBtn = findViewById(R.id.backBtn);
         Button ex3 = findViewById(R.id.btn3);
         Button ex6 = findViewById(R.id.btn6);
+        Button ex8 = findViewById(R.id.btn8);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +47,13 @@ public class ViewGroupList extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ViewGroupList.this, ListEx6.class);
+                startActivity(intent);
+            }
+        });
+        ex8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewGroupList.this, ListEx8.class);
                 startActivity(intent);
             }
         });
