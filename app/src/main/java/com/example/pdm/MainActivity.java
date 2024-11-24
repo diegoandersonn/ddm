@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnConversor = findViewById(R.id.btnContador);
         Button btnPaint = findViewById(R.id.btnPaint);
         Button btnVgList = findViewById(R.id.btnVgList);
+        Button btnListagem = findViewById(R.id.btnListagem);
+
         btnConversor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ViewGroupList.class);
+                startActivity(intent);
+            }
+        });
+        btnListagem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListagemPersonalizada.class);
                 startActivity(intent);
             }
         });
