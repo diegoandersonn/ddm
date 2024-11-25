@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnPaint = findViewById(R.id.btnPaint);
         Button btnVgList = findViewById(R.id.btnVgList);
         Button btnListagem = findViewById(R.id.btnListagem);
+        Button btnLauncher = findViewById(R.id.btnLauncher);
 
         btnConversor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ListagemPersonalizada.class);
+                startActivity(intent);
+            }
+        });
+        btnLauncher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Launcher.class);
                 startActivity(intent);
             }
         });

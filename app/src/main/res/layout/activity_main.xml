@@ -12,10 +12,10 @@
         android:layout_width="120dp"
         android:layout_height="60dp"
         android:text="Conversor"
-        app:layout_constraintBottom_toTopOf="@+id/btnVgList"
+        app:layout_constraintBottom_toTopOf="@+id/btnPaint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnVgList" />
 
     <Button
         android:id="@+id/btnPaint"
@@ -24,9 +24,8 @@
         android:text="Paint"
         app:layout_constraintBottom_toTopOf="@+id/btnListagem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVgList" />
+        app:layout_constraintTop_toBottomOf="@+id/btnContador" />
 
     <Button
         android:id="@+id/btnVgList"
@@ -36,7 +35,17 @@
         app:layout_constraintBottom_toTopOf="@+id/btnContador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPaint" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLauncher"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListagem" />
 
     <Button
         android:id="@+id/btnListagem"
@@ -44,7 +53,7 @@
         android:layout_height="60dp"
         android:text="Listagem Personalizada"
         android:textSize="11dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnLauncher"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnPaint" />
